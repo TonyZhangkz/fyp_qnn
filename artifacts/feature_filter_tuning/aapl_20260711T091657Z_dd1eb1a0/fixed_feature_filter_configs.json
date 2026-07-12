@@ -1,0 +1,16 @@
+{
+  "causality": "All transforms use observations available at each timestamp only; no centered windows or future values are used.",
+  "kalman": {
+    "measurement_variance_ratio": 1.0,
+    "process_variance_ratio": 0.001
+  },
+  "no_filter": {},
+  "rolling": {
+    "window_days": 10
+  },
+  "savgol": {
+    "polyorder": 3,
+    "window_length": 5
+  },
+  "selection_objective": "maximize validation ROC-AUC; tie-break lower validation BCE"
+}

@@ -1,0 +1,207 @@
+{
+  "results": [
+    {
+      "best_epoch": 1,
+      "model": "LSTM baseline",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        "f1_up": 0.6666666666666666,
+        "precision_up": 0.5,
+        "predicted_up_rate": 1.0,
+        "recall_up": 1.0,
+        "roc_auc": 0.5
+      },
+      "test_probabilities": [
+        0.5403889417648315,
+        0.5399628281593323,
+        0.5399183034896851,
+        0.539905309677124,
+        0.5403151512145996,
+        0.5397443771362305,
+        0.5405831933021545,
+        0.5393193960189819,
+        0.5393863916397095,
+        0.5393034219741821,
+        0.5390210747718811,
+        0.5388056039810181,
+        0.5383661389350891,
+        0.5388016104698181,
+        0.5389351844787598,
+        0.5385974645614624
+      ],
+      "training": {
+        "best_epoch": 1,
+        "best_validation_loss": 0.6352058053016663,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_bce": 0.5262586493045092,
+            "validation_bce": 0.6352058053016663
+          },
+          {
+            "epoch": 2.0,
+            "train_bce": 0.5199499186128378,
+            "validation_bce": 0.6715934872627258
+          }
+        ],
+        "quantum_gradient_seen": false
+      },
+      "training_seconds": 1.0739218999999998
+    },
+    {
+      "best_epoch": 1,
+      "model": "HybridQNN1",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "f1_up": 0.0,
+        "precision_up": 0.0,
+        "predicted_up_rate": 0.0,
+        "recall_up": 0.0,
+        "roc_auc": 0.875
+      },
+      "test_probabilities": [
+        0.4734703600406647,
+        0.4734768271446228,
+        0.4734764099121094,
+        0.47347715497016907,
+        0.47349467873573303,
+        0.4734745919704437,
+        0.4735032320022583,
+        0.473478227853775,
+        0.47349703311920166,
+        0.4735093414783478,
+        0.47349339723587036,
+        0.47349512577056885,
+        0.4734920561313629,
+        0.47348901629447937,
+        0.4734896123409271,
+        0.4734850525856018
+      ],
+      "training": {
+        "stage_1": {
+          "best_epoch": 1,
+          "best_validation_loss": 0.6223200559616089,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_bce": 0.5229515265673399,
+              "validation_bce": 0.6223200559616089
+            },
+            {
+              "epoch": 2.0,
+              "train_bce": 0.5165999140590429,
+              "validation_bce": 0.6795543432235718
+            }
+          ],
+          "quantum_gradient_seen": false
+        },
+        "stage_2": {
+          "best_epoch": 1,
+          "best_validation_loss": 0.5812475681304932,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_bce": 0.5272339954972267,
+              "validation_bce": 0.5812475681304932
+            },
+            {
+              "epoch": 2.0,
+              "train_bce": 0.5222094599157572,
+              "validation_bce": 0.5913105607032776
+            }
+          ],
+          "quantum_gradient_seen": true
+        }
+      },
+      "training_seconds": 1.1834714000000002
+    },
+    {
+      "best_epoch": 1,
+      "model": "HybridQNN2",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        "f1_up": 0.6666666666666666,
+        "precision_up": 0.5,
+        "predicted_up_rate": 1.0,
+        "recall_up": 1.0,
+        "roc_auc": 0.59375
+      },
+      "test_probabilities": [
+        0.5318551063537598,
+        0.5321369767189026,
+        0.5323776602745056,
+        0.5323227643966675,
+        0.5322047472000122,
+        0.5323019623756409,
+        0.5321981310844421,
+        0.531879723072052,
+        0.5325092673301697,
+        0.5320584774017334,
+        0.5324898362159729,
+        0.5324696898460388,
+        0.5324265360832214,
+        0.5328493118286133,
+        0.5325700640678406,
+        0.532463014125824
+      ],
+      "training": {
+        "best_epoch": 1,
+        "best_validation_loss": 0.6332515478134155,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_bce": 0.5317097473889589,
+            "validation_bce": 0.6332515478134155
+          },
+          {
+            "epoch": 2.0,
+            "train_bce": 0.5179582014679909,
+            "validation_bce": 0.6565827131271362
+          }
+        ],
+        "quantum_gradient_seen": true
+      },
+      "training_seconds": 1.3059070999999998
+    }
+  ]
+}

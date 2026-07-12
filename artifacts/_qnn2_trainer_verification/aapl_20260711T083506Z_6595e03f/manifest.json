@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "files_sha256": {
+    "metrics.json": "aef4a22dc91461ba043088ae29c0772147087ba8c4b6331c43a9930627ddbea9",
+    "model_card.md": "089bd816300cb3ef9231b3e3bc4df6844bb1fa452ddea55745c77bcb38b8b3e6",
+    "model_state.pt": "64bfb024560337671419286b08ba7403a4a45bc4523efe8b45da97debc696167",
+    "preprocessor.joblib": "17d622d98deb14e2cd576df9000881cc35f82896b5d004aa11896f34e40f8e2a",
+    "test_predictions.csv": "aeb845dfc01f96407d475d3e265f5df8ce647c6ca1658f583c81ef899dd497b4",
+    "train_hybridqnn1.py": "c64fd67cccc14944f033a01a3c2649fe1ee2e7c33dc0ebc59ece3128e4c47b0a",
+    "train_hybridqnn2.py": "1e310320ca7e2756d9b3e77f10a2114674ae7dc9550802e7a4b9d942e9ea08b6",
+    "training.log": "cabc47f71b4d404859a82247b6f2d8a2f8a67840f945e27a10655c79a4b44ddb",
+    "training_config.json": "084bd15970fa3dd570c36b1393922984e1c674c525e67a08b0cbeee8bd2c2aab"
+  }
+}

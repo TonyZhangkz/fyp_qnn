@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "files_sha256": {
+    "benchmark_config.json": "886199434375a25867579e2f5f221624f6559b256a292816e1f8572131a50f5e",
+    "classification_metrics.json": "801a113e25c78fa8c1d84f9606ddbd515af0c5a1738c77bd1089daa2a4effa5e",
+    "classification_results.csv": "ec49a2965ca85f4531a0cdc739c7315d25d16aef5b8188e00ba3942a22e2e790",
+    "hybridqnn1_state.pt": "016a928777ad37a0cba03c2495e7c6d33eca399348b565fb278de73c3a65eff1",
+    "hybridqnn2_state.pt": "8427ed48edb8d2e1cf1567f3d6c3f8de6b027c1e9e3a053ee367b420ab47de13",
+    "lstm_baseline_state.pt": "7dea502708a127ddbb3844d5efdd81777144881f24a5f7ca377df31a31dd5b4a",
+    "model_card.md": "ceee983e5b9e6e5499974d8dbf56b645bf9db6c50d140d725a2ce87eab4e487f",
+    "preprocessor.joblib": "8219af4601c902f2f3f80ee03cc25e06aac11b12ddadb99accdcf8896e78d2a1",
+    "run_direction_classification_benchmark.py": "95d107ab5c23c094f0a717beb5f979458e5968804a893523e1e1d08f7fe70c38",
+    "test_direction_predictions.csv": "343bae6c0c9e8b8f65d48e597f526b2e8d0c1cf2594cefd11ae49d9756865df5",
+    "train_hybridqnn1.py": "c64fd67cccc14944f033a01a3c2649fe1ee2e7c33dc0ebc59ece3128e4c47b0a",
+    "train_hybridqnn2.py": "3ce2b25e75e3dee10300850acf33336ceadfc6d06992918ac4eca49a86b39ca2",
+    "training.log": "73d6350ecf7b781c2234e507c73459bb955746f9cde39dc9de04a1a2062096e7"
+  }
+}

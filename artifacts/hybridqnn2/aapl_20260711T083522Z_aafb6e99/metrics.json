@@ -1,0 +1,79 @@
+{
+  "joint_training": {
+    "elapsed_seconds_before_packaging": 61.589922599999994,
+    "joint": {
+      "best_epoch": 2,
+      "best_validation_rmse": 0.06940827518701553,
+      "epochs_ran": 7,
+      "history": [
+        {
+          "epoch": 1.0,
+          "train_rmse": 0.1346753667615444,
+          "validation_rmse": 0.07319159805774689
+        },
+        {
+          "epoch": 2.0,
+          "train_rmse": 0.10270623935822032,
+          "validation_rmse": 0.06940827518701553
+        },
+        {
+          "epoch": 3.0,
+          "train_rmse": 0.06518300908303469,
+          "validation_rmse": 0.0744820311665535
+        },
+        {
+          "epoch": 4.0,
+          "train_rmse": 0.06528644878742802,
+          "validation_rmse": 0.0871245488524437
+        },
+        {
+          "epoch": 5.0,
+          "train_rmse": 0.0648321067216309,
+          "validation_rmse": 0.0949723869562149
+        },
+        {
+          "epoch": 6.0,
+          "train_rmse": 0.06436404627234109,
+          "validation_rmse": 0.09738603234291077
+        },
+        {
+          "epoch": 7.0,
+          "train_rmse": 0.06421100006294915,
+          "validation_rmse": 0.09721213579177856
+        }
+      ],
+      "quantum_gradient_seen": true
+    }
+  },
+  "refit_training": {
+    "joint_epochs": 2,
+    "joint_final_train_rmse": 0.10337259548227214,
+    "quantum_gradient_seen": true,
+    "used": true
+  },
+  "release_gate": {
+    "reasons": [
+      "Model price RMSE did not beat the last-close naive baseline."
+    ],
+    "status": "rejected"
+  },
+  "test": {
+    "price_mae": 17.561513900756836,
+    "price_r2": 0.384568989276886,
+    "price_rmse": 23.046721397793224,
+    "scaled_mae": 0.1596921682357788,
+    "scaled_rmse": 0.20957085501821926
+  },
+  "test_last_close_baseline": {
+    "price_mae": 2.7577440690021127,
+    "price_r2": 0.978291480623051,
+    "price_rmse": 4.328471737949276
+  },
+  "validation": {
+    "price_mae": 6.036764144897461,
+    "price_r2": 0.488312304019928,
+    "price_rmse": 7.632899460546083,
+    "scaled_mae": 0.05489414185285568,
+    "scaled_rmse": 0.06940827156087351
+  }
+}

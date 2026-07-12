@@ -1,0 +1,72 @@
+{
+  "refit_training": {
+    "quantum_gradient_seen": true,
+    "stage_1_epochs": 2,
+    "stage_1_final_train_rmse": 0.1771956837732445,
+    "stage_2_epochs": 2,
+    "stage_2_final_train_rmse": 0.28582933660812637,
+    "used": true
+  },
+  "release_gate": {
+    "reasons": [],
+    "status": "accepted"
+  },
+  "selection_training": {
+    "elapsed_seconds_before_packaging": 3.6971904999999996,
+    "stage_1": {
+      "best_epoch": 2,
+      "best_validation_rmse": 0.16441340744495392,
+      "epochs_ran": 2,
+      "history": [
+        {
+          "epoch": 1.0,
+          "train_rmse": 0.574572462339436,
+          "validation_rmse": 0.5880107283592224
+        },
+        {
+          "epoch": 2.0,
+          "train_rmse": 0.1296620056389349,
+          "validation_rmse": 0.16441340744495392
+        }
+      ],
+      "quantum_gradient_seen": false
+    },
+    "stage_2": {
+      "best_epoch": 2,
+      "best_validation_rmse": 0.6360847353935242,
+      "epochs_ran": 2,
+      "history": [
+        {
+          "epoch": 1.0,
+          "train_rmse": 0.5170327444132756,
+          "validation_rmse": 0.9037343859672546
+        },
+        {
+          "epoch": 2.0,
+          "train_rmse": 0.11145048718228828,
+          "validation_rmse": 0.6360847353935242
+        }
+      ],
+      "quantum_gradient_seen": true
+    }
+  },
+  "test": {
+    "price_mae": 88.49576568603516,
+    "price_r2": -1280.31494140625,
+    "price_rmse": 88.53242200512618,
+    "scaled_mae": 1.2118339538574219,
+    "scaled_rmse": 1.2123358743232093
+  },
+  "test_last_close_baseline": {
+    "price_mae": 1.2775630950927734,
+    "price_r2": 0.5493349537803585,
+    "price_rmse": 1.660356461306747
+  },
+  "validation": {
+    "price_mae": 44.931427001953125,
+    "price_r2": -15.726827621459961,
+    "price_rmse": 46.45092020919768,
+    "scaled_mae": 0.6152771711349487,
+    "scaled_rmse": 0.6360847030967072
+  }
+}

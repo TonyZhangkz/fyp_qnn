@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "files_sha256": {
+    "filter_tuning_config.json": "a2833b71d7c8940fd7afa81768177b0e6b2e943a7eed80f59599e4aec3016480",
+    "filter_tuning_results.csv": "ee2838a9c49ec9988f2c9a580b755c5c022bdd187d6164cec88f136c680aae70",
+    "filter_tuning_results.json": "72db825bee8c169b52150a1869ea8cd09fdb87ac6e14b7608d78b8a4456d41f6",
+    "fixed_feature_filter_configs.json": "58618488a2953dbf71120e0fa4353903be59cb760855701654d7765258397c85",
+    "model_card.md": "ac6cf9e4e2c4f81619d0928c1b805fb37eefe46931763101f6d0e843af41c3c0",
+    "run_direction_classification_benchmark.py": "95d107ab5c23c094f0a717beb5f979458e5968804a893523e1e1d08f7fe70c38",
+    "training.log": "3715b368cfb5867e3e990154c572965be28f56a4a0130c8923f3af3ca107a398",
+    "tune_feature_filters.py": "3dc1d89a732d280c8a4cd3a8fc0796dc4ef150c18f29c37034e8ba4257b7886e"
+  }
+}

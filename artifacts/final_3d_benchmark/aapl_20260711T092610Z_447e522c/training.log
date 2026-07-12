@@ -1,0 +1,53 @@
+2026-07-11T17:26:10Z | INFO | Starting fixed final 3D benchmark.
+2026-07-11T17:26:10Z | INFO | Configuration: {"data_path": "E:\\fyp_qnn\\data\\yfinance\\AAPL.parquet", "output_dir": "E:\\fyp_qnn\\fyp_qnn\\artifacts\\final_3d_benchmark", "fixed_filter_config_path": "E:\\fyp_qnn\\fyp_qnn\\config\\fixed_feature_filter_configs.json", "ticker": "AAPL", "profile": "final", "lookback": 5, "k_features": 3, "n_qubits": 3, "q_layers": 1, "lstm_hidden_size": 16, "lstm_layers": 1, "lstm_dropout": 0.0, "fusion_hidden_size": 16, "holdout_ratio": 0.2, "validation_ratio": 0.2, "batch_size": 8, "baseline_epochs": 15, "hqnn1_pretrain_epochs": 8, "hqnn1_quantum_epochs": 8, "hqnn2_joint_epochs": 12, "baseline_lr": 0.001, "hqnn1_lr": 0.005, "hqnn2_lr": 0.001, "patience": 3, "cpu_threads": 4, "seed": 42, "max_train_sequences": 0, "max_validation_sequences": 0, "max_test_sequences": 0}
+2026-07-11T17:26:10Z | INFO | Preparing vanilla filter datasets.
+2026-07-11T17:26:12Z | INFO | Binary LSTM baseline early stopped at epoch 7.
+2026-07-11T17:26:12Z | INFO | Binary LSTM baseline selected epoch 4 with validation BCE 0.657858.
+2026-07-11T17:26:12Z | INFO | Binary | vanilla | LSTM baseline: AUC 0.5717 | balanced accuracy 0.5255 | 2.07s
+2026-07-11T17:26:14Z | INFO | Continuous | vanilla | LSTM baseline: RMSE 14.5994 | R2 0.7530 | 1.97s
+2026-07-11T17:26:14Z | INFO | HybridQNN1 Stage 1 early stopped at epoch 5.
+2026-07-11T17:26:14Z | INFO | HybridQNN1 Stage 1 selected epoch 2 with validation BCE 0.657772.
+2026-07-11T17:26:47Z | INFO | Binary HybridQNN1 Stage 2 early stopped at epoch 6.
+2026-07-11T17:26:47Z | INFO | Binary HybridQNN1 Stage 2 selected epoch 3 with validation BCE 0.656970.
+2026-07-11T17:26:48Z | INFO | Binary | vanilla | HybridQNN1: AUC 0.4394 | balanced accuracy 0.5000 | 33.97s
+2026-07-11T17:26:49Z | INFO | HybridQNN1 regression Stage 1 early stopped at epoch 7.
+2026-07-11T17:27:09Z | INFO | Continuous HybridQNN1 Stage 2 early stopped at epoch 4.
+2026-07-11T17:27:10Z | INFO | Continuous | vanilla | HybridQNN1: RMSE 51.2372 | R2 -2.0418 | 22.67s
+2026-07-11T17:28:00Z | INFO | Binary HybridQNN2 early stopped at epoch 8.
+2026-07-11T17:28:00Z | INFO | Binary HybridQNN2 selected epoch 5 with validation BCE 0.657337.
+2026-07-11T17:28:01Z | INFO | Binary | vanilla | HybridQNN2: AUC 0.5317 | balanced accuracy 0.5328 | 51.06s
+2026-07-11T17:29:25Z | INFO | Continuous | vanilla | HybridQNN2: RMSE 22.2356 | R2 0.4271 | 83.27s
+2026-07-11T17:29:25Z | INFO | Preparing savgol filter datasets.
+2026-07-11T17:29:26Z | INFO | Binary LSTM baseline early stopped at epoch 4.
+2026-07-11T17:29:26Z | INFO | Binary LSTM baseline selected epoch 1 with validation BCE 0.658571.
+2026-07-11T17:29:26Z | INFO | Binary | savgol | LSTM baseline: AUC 0.5003 | balanced accuracy 0.4987 | 0.64s
+2026-07-11T17:29:28Z | INFO | Continuous | savgol | LSTM baseline: RMSE 13.0651 | R2 0.8022 | 1.94s
+2026-07-11T17:29:28Z | INFO | HybridQNN1 Stage 1 early stopped at epoch 4.
+2026-07-11T17:29:28Z | INFO | HybridQNN1 Stage 1 selected epoch 1 with validation BCE 0.658317.
+2026-07-11T17:30:04Z | INFO | Binary HybridQNN1 Stage 2 early stopped at epoch 6.
+2026-07-11T17:30:04Z | INFO | Binary HybridQNN1 Stage 2 selected epoch 3 with validation BCE 0.656964.
+2026-07-11T17:30:05Z | INFO | Binary | savgol | HybridQNN1: AUC 0.4614 | balanced accuracy 0.5000 | 36.68s
+2026-07-11T17:30:34Z | INFO | Continuous HybridQNN1 Stage 2 early stopped at epoch 5.
+2026-07-11T17:30:35Z | INFO | Continuous | savgol | HybridQNN1: RMSE 51.2128 | R2 -2.0389 | 30.85s
+2026-07-11T17:31:15Z | INFO | Binary HybridQNN2 early stopped at epoch 6.
+2026-07-11T17:31:15Z | INFO | Binary HybridQNN2 selected epoch 3 with validation BCE 0.657729.
+2026-07-11T17:31:16Z | INFO | Binary | savgol | HybridQNN2: AUC 0.4631 | balanced accuracy 0.5179 | 40.35s
+2026-07-11T17:32:34Z | INFO | Continuous | savgol | HybridQNN2: RMSE 16.2804 | R2 0.6929 | 78.52s
+2026-07-11T17:32:34Z | INFO | Preparing rolling filter datasets.
+2026-07-11T17:32:35Z | INFO | Binary LSTM baseline early stopped at epoch 7.
+2026-07-11T17:32:35Z | INFO | Binary LSTM baseline selected epoch 4 with validation BCE 0.657044.
+2026-07-11T17:32:35Z | INFO | Binary | rolling | LSTM baseline: AUC 0.5838 | balanced accuracy 0.5116 | 0.93s
+2026-07-11T17:32:36Z | INFO | Continuous LSTM baseline early stopped at epoch 7.
+2026-07-11T17:32:36Z | INFO | Continuous | rolling | LSTM baseline: RMSE 18.5822 | R2 0.5999 | 0.88s
+2026-07-11T17:32:37Z | INFO | HybridQNN1 Stage 1 early stopped at epoch 5.
+2026-07-11T17:32:37Z | INFO | HybridQNN1 Stage 1 selected epoch 2 with validation BCE 0.657786.
+2026-07-11T17:32:58Z | INFO | Binary HybridQNN1 Stage 2 early stopped at epoch 4.
+2026-07-11T17:32:58Z | INFO | Binary HybridQNN1 Stage 2 selected epoch 1 with validation BCE 0.656757.
+2026-07-11T17:32:59Z | INFO | Binary | rolling | HybridQNN1: AUC 0.5633 | balanced accuracy 0.5000 | 22.48s
+2026-07-11T17:32:59Z | INFO | HybridQNN1 regression Stage 1 early stopped at epoch 6.
+2026-07-11T17:33:26Z | INFO | Continuous HybridQNN1 Stage 2 early stopped at epoch 5.
+2026-07-11T17:33:27Z | INFO | Continuous | rolling | HybridQNN1: RMSE 50.0699 | R2 -1.9048 | 28.45s
+2026-07-11T17:33:52Z | INFO | Binary HybridQNN2 early stopped at epoch 4.
+2026-07-11T17:33:52Z | INFO | Binary HybridQNN2 selected epoch 1 with validation BCE 0.656180.
+2026-07-11T17:33:53Z | INFO | Binary | rolling | HybridQNN2: AUC 0.5638 | balanced accuracy 0.5000 | 26.35s
+2026-07-11T17:35:12Z | INFO | Continuous | rolling | HybridQNN2: RMSE 21.6792 | R2 0.4554 | 78.16s

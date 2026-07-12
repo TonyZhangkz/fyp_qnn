@@ -1,6 +1,3 @@
-# Generated local model bundles
-artifacts/
-
 # Local Python bytecode
 __pycache__/
 *.py[cod]

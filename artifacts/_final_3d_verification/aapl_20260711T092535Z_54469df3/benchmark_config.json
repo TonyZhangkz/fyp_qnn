@@ -1,0 +1,56 @@
+{
+  "artifact_format_version": 1,
+  "config": {
+    "baseline_epochs": 2,
+    "baseline_lr": 0.01,
+    "batch_size": 8,
+    "cpu_threads": 2,
+    "data_path": "E:\\fyp_qnn\\data\\yfinance\\AAPL.parquet",
+    "fixed_filter_config_path": "E:\\fyp_qnn\\fyp_qnn\\config\\fixed_feature_filter_configs.json",
+    "fusion_hidden_size": 6,
+    "holdout_ratio": 0.2,
+    "hqnn1_lr": 0.01,
+    "hqnn1_pretrain_epochs": 2,
+    "hqnn1_quantum_epochs": 2,
+    "hqnn2_joint_epochs": 2,
+    "hqnn2_lr": 0.01,
+    "k_features": 3,
+    "lookback": 2,
+    "lstm_dropout": 0.0,
+    "lstm_hidden_size": 6,
+    "lstm_layers": 1,
+    "max_test_sequences": 16,
+    "max_train_sequences": 64,
+    "max_validation_sequences": 16,
+    "n_qubits": 3,
+    "output_dir": "E:\\fyp_qnn\\fyp_qnn\\artifacts\\_final_3d_verification",
+    "patience": 1,
+    "profile": "smoke",
+    "q_layers": 1,
+    "seed": 42,
+    "ticker": "AAPL",
+    "validation_ratio": 0.25
+  },
+  "grid": {
+    "filters": [
+      "vanilla",
+      "savgol",
+      "rolling"
+    ],
+    "models": [
+      "LSTM baseline",
+      "HybridQNN1",
+      "HybridQNN2"
+    ],
+    "targets": [
+      "binary_direction",
+      "continuous_close"
+    ]
+  },
+  "runtime": {
+    "created_at_utc": "2026-07-11T09:25:55.832206+00:00",
+    "python": "3.9.24 (main, Oct 14 2025, 16:10:39) [MSC v.1929 64 bit (AMD64)]",
+    "scikit_learn": "1.6.1",
+    "torch": "2.8.0+cu126"
+  }
+}

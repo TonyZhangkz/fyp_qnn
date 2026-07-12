@@ -1,0 +1,57 @@
+2026-07-11T17:17:53Z | INFO | Starting causal feature-filter tuning.
+2026-07-11T17:17:53Z | INFO | Configuration: {"data_path": "E:\\fyp_qnn\\data\\yfinance\\AAPL.parquet", "output_dir": "E:\\fyp_qnn\\fyp_qnn\\artifacts\\feature_filter_tuning", "fixed_config_path": "E:\\fyp_qnn\\fyp_qnn\\config\\fixed_feature_filter_configs.json", "ticker": "AAPL", "lookback": 5, "k_features": 3, "lstm_hidden_size": 16, "holdout_ratio": 0.2, "validation_ratio": 0.2, "batch_size": 8, "proxy_epochs": 12, "proxy_lr": 0.001, "patience": 3, "cpu_threads": 4, "seed": 42, "max_candidates": 19}
+2026-07-11T17:17:53Z | INFO | Evaluating 19 filter candidates sequentially.
+2026-07-11T17:17:55Z | INFO | none candidate 1 early stopped at epoch 7.
+2026-07-11T17:17:55Z | INFO | none candidate 1 selected epoch 4 with validation BCE 0.657858.
+2026-07-11T17:17:55Z | INFO | none {}: validation ROC-AUC 0.4994 | test ROC-AUC 0.5717 | 2.07s
+2026-07-11T17:17:56Z | INFO | kalman candidate 2 early stopped at epoch 8.
+2026-07-11T17:17:56Z | INFO | kalman candidate 2 selected epoch 5 with validation BCE 0.657904.
+2026-07-11T17:17:56Z | INFO | kalman {'process_variance_ratio': 0.0001, 'measurement_variance_ratio': 0.01}: validation ROC-AUC 0.4993 | test ROC-AUC 0.4885 | 1.05s
+2026-07-11T17:17:57Z | INFO | kalman candidate 3 selected epoch 12 with validation BCE 0.659241.
+2026-07-11T17:17:57Z | INFO | kalman {'process_variance_ratio': 0.0001, 'measurement_variance_ratio': 0.1}: validation ROC-AUC 0.4838 | test ROC-AUC 0.5130 | 1.52s
+2026-07-11T17:17:59Z | INFO | kalman candidate 4 selected epoch 12 with validation BCE 0.656574.
+2026-07-11T17:17:59Z | INFO | kalman {'process_variance_ratio': 0.0001, 'measurement_variance_ratio': 1.0}: validation ROC-AUC 0.5234 | test ROC-AUC 0.5363 | 1.52s
+2026-07-11T17:18:00Z | INFO | kalman candidate 5 early stopped at epoch 7.
+2026-07-11T17:18:00Z | INFO | kalman candidate 5 selected epoch 4 with validation BCE 0.657230.
+2026-07-11T17:18:00Z | INFO | kalman {'process_variance_ratio': 0.001, 'measurement_variance_ratio': 0.01}: validation ROC-AUC 0.5307 | test ROC-AUC 0.5255 | 1.00s
+2026-07-11T17:18:01Z | INFO | kalman candidate 6 early stopped at epoch 8.
+2026-07-11T17:18:01Z | INFO | kalman candidate 6 selected epoch 5 with validation BCE 0.657904.
+2026-07-11T17:18:01Z | INFO | kalman {'process_variance_ratio': 0.001, 'measurement_variance_ratio': 0.1}: validation ROC-AUC 0.4993 | test ROC-AUC 0.4885 | 1.22s
+2026-07-11T17:18:03Z | INFO | kalman candidate 7 selected epoch 12 with validation BCE 0.659241.
+2026-07-11T17:18:03Z | INFO | kalman {'process_variance_ratio': 0.001, 'measurement_variance_ratio': 1.0}: validation ROC-AUC 0.4838 | test ROC-AUC 0.5130 | 1.77s
+2026-07-11T17:18:04Z | INFO | kalman candidate 8 early stopped at epoch 7.
+2026-07-11T17:18:04Z | INFO | kalman candidate 8 selected epoch 4 with validation BCE 0.659164.
+2026-07-11T17:18:04Z | INFO | kalman {'process_variance_ratio': 0.01, 'measurement_variance_ratio': 0.01}: validation ROC-AUC 0.4673 | test ROC-AUC 0.5891 | 1.25s
+2026-07-11T17:18:05Z | INFO | kalman candidate 9 early stopped at epoch 7.
+2026-07-11T17:18:05Z | INFO | kalman candidate 9 selected epoch 4 with validation BCE 0.657230.
+2026-07-11T17:18:05Z | INFO | kalman {'process_variance_ratio': 0.01, 'measurement_variance_ratio': 0.1}: validation ROC-AUC 0.5307 | test ROC-AUC 0.5255 | 1.08s
+2026-07-11T17:18:06Z | INFO | kalman candidate 10 early stopped at epoch 8.
+2026-07-11T17:18:06Z | INFO | kalman candidate 10 selected epoch 5 with validation BCE 0.657904.
+2026-07-11T17:18:06Z | INFO | kalman {'process_variance_ratio': 0.01, 'measurement_variance_ratio': 1.0}: validation ROC-AUC 0.4993 | test ROC-AUC 0.4885 | 1.04s
+2026-07-11T17:18:08Z | INFO | savgol candidate 11 early stopped at epoch 7.
+2026-07-11T17:18:08Z | INFO | savgol candidate 11 selected epoch 4 with validation BCE 0.657918.
+2026-07-11T17:18:08Z | INFO | savgol {'window_length': 5, 'polyorder': 2}: validation ROC-AUC 0.4973 | test ROC-AUC 0.5712 | 0.92s
+2026-07-11T17:18:09Z | INFO | savgol candidate 12 early stopped at epoch 7.
+2026-07-11T17:18:09Z | INFO | savgol candidate 12 selected epoch 4 with validation BCE 0.657858.
+2026-07-11T17:18:09Z | INFO | savgol {'window_length': 5, 'polyorder': 3}: validation ROC-AUC 0.4998 | test ROC-AUC 0.5720 | 0.89s
+2026-07-11T17:18:10Z | INFO | savgol candidate 13 early stopped at epoch 7.
+2026-07-11T17:18:10Z | INFO | savgol candidate 13 selected epoch 4 with validation BCE 0.657970.
+2026-07-11T17:18:10Z | INFO | savgol {'window_length': 7, 'polyorder': 2}: validation ROC-AUC 0.4971 | test ROC-AUC 0.5719 | 0.89s
+2026-07-11T17:18:11Z | INFO | savgol candidate 14 early stopped at epoch 7.
+2026-07-11T17:18:11Z | INFO | savgol candidate 14 selected epoch 4 with validation BCE 0.657904.
+2026-07-11T17:18:11Z | INFO | savgol {'window_length': 7, 'polyorder': 3}: validation ROC-AUC 0.4996 | test ROC-AUC 0.5709 | 0.92s
+2026-07-11T17:18:12Z | INFO | savgol candidate 15 early stopped at epoch 7.
+2026-07-11T17:18:12Z | INFO | savgol candidate 15 selected epoch 4 with validation BCE 0.659449.
+2026-07-11T17:18:12Z | INFO | savgol {'window_length': 11, 'polyorder': 2}: validation ROC-AUC 0.4646 | test ROC-AUC 0.5772 | 0.88s
+2026-07-11T17:18:14Z | INFO | savgol candidate 16 early stopped at epoch 7.
+2026-07-11T17:18:14Z | INFO | savgol candidate 16 selected epoch 4 with validation BCE 0.657930.
+2026-07-11T17:18:14Z | INFO | savgol {'window_length': 11, 'polyorder': 3}: validation ROC-AUC 0.5002 | test ROC-AUC 0.5706 | 1.00s
+2026-07-11T17:18:15Z | INFO | savgol candidate 17 early stopped at epoch 7.
+2026-07-11T17:18:15Z | INFO | savgol candidate 17 selected epoch 4 with validation BCE 0.657467.
+2026-07-11T17:18:15Z | INFO | savgol {'window_length': 15, 'polyorder': 2}: validation ROC-AUC 0.5070 | test ROC-AUC 0.5434 | 0.95s
+2026-07-11T17:18:16Z | INFO | savgol candidate 18 early stopped at epoch 7.
+2026-07-11T17:18:16Z | INFO | savgol candidate 18 selected epoch 4 with validation BCE 0.659333.
+2026-07-11T17:18:16Z | INFO | savgol {'window_length': 15, 'polyorder': 3}: validation ROC-AUC 0.4693 | test ROC-AUC 0.5743 | 0.91s
+2026-07-11T17:18:17Z | INFO | rolling candidate 19 early stopped at epoch 8.
+2026-07-11T17:18:17Z | INFO | rolling candidate 19 selected epoch 5 with validation BCE 0.657770.
+2026-07-11T17:18:17Z | INFO | rolling {'window_days': 10}: validation ROC-AUC 0.5147 | test ROC-AUC 0.5770 | 1.07s

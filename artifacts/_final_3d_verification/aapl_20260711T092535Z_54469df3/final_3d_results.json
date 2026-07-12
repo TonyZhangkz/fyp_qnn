@@ -1,0 +1,1171 @@
+{
+  "results": [
+    {
+      "best_epoch": 1,
+      "filter": "vanilla",
+      "filter_config": {},
+      "model": "LSTM baseline",
+      "target": "binary_direction",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        "f1_up": 0.6666666666666666,
+        "precision_up": 0.5,
+        "predicted_up_rate": 1.0,
+        "recall_up": 1.0,
+        "roc_auc": 0.46875
+      },
+      "test_probabilities": [
+        0.55036461353302,
+        0.5496096014976501,
+        0.5495432019233704,
+        0.5494909286499023,
+        0.5499407649040222,
+        0.5494658946990967,
+        0.5502227544784546,
+        0.5489212274551392,
+        0.5486987829208374,
+        0.5486093759536743,
+        0.5484138131141663,
+        0.5480058193206787,
+        0.5474228262901306,
+        0.5479443073272705,
+        0.5481290221214294,
+        0.5477297306060791
+      ],
+      "training": {
+        "best_epoch": 1,
+        "best_validation_loss": 0.6420705318450928,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_bce": 0.5237508527934551,
+            "validation_bce": 0.6420705318450928
+          },
+          {
+            "epoch": 2.0,
+            "train_bce": 0.5196107625961304,
+            "validation_bce": 0.6669815182685852
+          }
+        ],
+        "quantum_gradient_seen": false
+      },
+      "training_seconds": 1.4973950999999999
+    },
+    {
+      "best_epoch": 2,
+      "filter": "vanilla",
+      "filter_config": {},
+      "model": "LSTM baseline",
+      "target": "continuous_close",
+      "test": {
+        "mae": 106.02026462554932,
+        "r2": -1837.5832678677584,
+        "rmse": 106.0513132093051
+      },
+      "test_predictions": [
+        168.22023010253906,
+        168.21006774902344,
+        168.31005859375,
+        168.26560974121094,
+        168.11683654785156,
+        168.37290954589844,
+        168.09262084960938,
+        168.36410522460938,
+        168.3870849609375,
+        168.27871704101562,
+        168.5053253173828,
+        168.4856414794922,
+        168.49534606933594,
+        168.51400756835938,
+        168.4596405029297,
+        168.44985961914062
+      ],
+      "training": {
+        "best_epoch": 2,
+        "best_validation_loss": 0.5663308501243591,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_mse": 0.3061678148806095,
+            "validation_mse": 1.118320107460022
+          },
+          {
+            "epoch": 2.0,
+            "train_mse": 0.11421104706823826,
+            "validation_mse": 0.5663308501243591
+          }
+        ],
+        "quantum_gradient_seen": false
+      },
+      "training_seconds": 0.02357039999999966
+    },
+    {
+      "best_epoch": 1,
+      "filter": "vanilla",
+      "filter_config": {},
+      "model": "HybridQNN1",
+      "target": "binary_direction",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "f1_up": 0.0,
+        "precision_up": 0.0,
+        "predicted_up_rate": 0.0,
+        "recall_up": 0.0,
+        "roc_auc": 0.4375
+      },
+      "test_probabilities": [
+        0.4250502586364746,
+        0.42503121495246887,
+        0.42501965165138245,
+        0.42501723766326904,
+        0.42502361536026,
+        0.42502346634864807,
+        0.4250311255455017,
+        0.42499253153800964,
+        0.4249890148639679,
+        0.4249935746192932,
+        0.4249688982963562,
+        0.4249800443649292,
+        0.4249784052371979,
+        0.42496734857559204,
+        0.42498934268951416,
+        0.42499399185180664
+      ],
+      "training": {
+        "stage_1": {
+          "best_epoch": 1,
+          "best_validation_loss": 0.5674201250076294,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_bce": 0.5261297412216663,
+              "validation_bce": 0.5674201250076294
+            },
+            {
+              "epoch": 2.0,
+              "train_bce": 0.5207000114023685,
+              "validation_bce": 0.6031518578529358
+            }
+          ],
+          "quantum_gradient_seen": false
+        },
+        "stage_2": {
+          "best_epoch": 1,
+          "best_validation_loss": 0.5406400561332703,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_bce": 0.5312120318412781,
+              "validation_bce": 0.5406400561332703
+            },
+            {
+              "epoch": 2.0,
+              "train_bce": 0.5248196311295033,
+              "validation_bce": 0.5600509643554688
+            }
+          ],
+          "quantum_gradient_seen": true
+        }
+      },
+      "training_seconds": 1.6770329999999998
+    },
+    {
+      "best_epoch": 2,
+      "filter": "vanilla",
+      "filter_config": {},
+      "model": "HybridQNN1",
+      "target": "continuous_close",
+      "test": {
+        "mae": 138.57906532287598,
+        "r2": -3139.4252297263342,
+        "rmse": 138.60172256669108
+      },
+      "test_predictions": [
+        135.71478271484375,
+        135.73992919921875,
+        135.7360382080078,
+        135.74310302734375,
+        135.76734924316406,
+        135.7455596923828,
+        135.7683868408203,
+        135.80162048339844,
+        135.8019256591797,
+        135.8580780029297,
+        135.8407440185547,
+        135.8227996826172,
+        135.83993530273438,
+        135.8109893798828,
+        135.79444885253906,
+        135.8015594482422
+      ],
+      "training": {
+        "stage_1": {
+          "best_epoch": 2,
+          "best_validation_loss": 0.28887706995010376,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_mse": 0.4978823997080326,
+              "validation_mse": 0.9750593900680542
+            },
+            {
+              "epoch": 2.0,
+              "train_mse": 0.12512951996177435,
+              "validation_mse": 0.28887706995010376
+            }
+          ],
+          "quantum_gradient_seen": false
+        },
+        "stage_2": {
+          "best_epoch": 2,
+          "best_validation_loss": 1.4701621532440186,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_mse": 0.9407340511679649,
+              "validation_mse": 2.182112455368042
+            },
+            {
+              "epoch": 2.0,
+              "train_mse": 0.4698307253420353,
+              "validation_mse": 1.4701621532440186
+            }
+          ],
+          "quantum_gradient_seen": true
+        }
+      },
+      "training_seconds": 1.4491956000000004
+    },
+    {
+      "best_epoch": 1,
+      "filter": "vanilla",
+      "filter_config": {},
+      "model": "HybridQNN2",
+      "target": "binary_direction",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "f1_up": 0.0,
+        "precision_up": 0.0,
+        "predicted_up_rate": 0.0,
+        "recall_up": 0.0,
+        "roc_auc": 0.328125
+      },
+      "test_probabilities": [
+        0.4760006070137024,
+        0.47563719749450684,
+        0.47566330432891846,
+        0.475597620010376,
+        0.4755435287952423,
+        0.47574663162231445,
+        0.4755306541919708,
+        0.47529980540275574,
+        0.4751536548137665,
+        0.4749056398868561,
+        0.47507724165916443,
+        0.4749920070171356,
+        0.4747829735279083,
+        0.47498685121536255,
+        0.4751201868057251,
+        0.47501417994499207
+      ],
+      "training": {
+        "best_epoch": 1,
+        "best_validation_loss": 0.5763704776763916,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_bce": 0.5269724652171135,
+            "validation_bce": 0.5763704776763916
+          },
+          {
+            "epoch": 2.0,
+            "train_bce": 0.5199763625860214,
+            "validation_bce": 0.5960469245910645
+          }
+        ],
+        "quantum_gradient_seen": true
+      },
+      "training_seconds": 1.5416440000000016
+    },
+    {
+      "best_epoch": 2,
+      "filter": "vanilla",
+      "filter_config": {},
+      "model": "HybridQNN2",
+      "target": "continuous_close",
+      "test": {
+        "mae": 126.98696708679199,
+        "r2": -2636.3100497135315,
+        "rmse": 127.01499450599371
+      },
+      "test_predictions": [
+        146.98951721191406,
+        147.1209259033203,
+        147.15370178222656,
+        147.09718322753906,
+        147.16403198242188,
+        147.23130798339844,
+        147.17156982421875,
+        147.35992431640625,
+        147.52276611328125,
+        147.53587341308594,
+        147.63307189941406,
+        147.70965576171875,
+        147.68795776367188,
+        147.58740234375,
+        147.52984619140625,
+        147.5660858154297
+      ],
+      "training": {
+        "best_epoch": 2,
+        "best_validation_loss": 1.0099111795425415,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_mse": 0.6822225078940392,
+            "validation_mse": 1.7657389640808105
+          },
+          {
+            "epoch": 2.0,
+            "train_mse": 0.2305662427097559,
+            "validation_mse": 1.0099111795425415
+          }
+        ],
+        "quantum_gradient_seen": true
+      },
+      "training_seconds": 1.5059588999999995
+    },
+    {
+      "best_epoch": 1,
+      "filter": "savgol",
+      "filter_config": {
+        "polyorder": 2,
+        "window_length": 15
+      },
+      "model": "LSTM baseline",
+      "target": "binary_direction",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "f1_up": 0.0,
+        "precision_up": 0.0,
+        "predicted_up_rate": 0.0,
+        "recall_up": 0.0,
+        "roc_auc": 0.234375
+      },
+      "test_probabilities": [
+        0.48109710216522217,
+        0.48093926906585693,
+        0.4809158742427826,
+        0.48101338744163513,
+        0.48073810338974,
+        0.4809386134147644,
+        0.48061907291412354,
+        0.4807470440864563,
+        0.48071619868278503,
+        0.4804532527923584,
+        0.48056262731552124,
+        0.48066380620002747,
+        0.48078182339668274,
+        0.4810011386871338,
+        0.4811795949935913,
+        0.4813474714756012
+      ],
+      "training": {
+        "best_epoch": 1,
+        "best_validation_loss": 0.5893016457557678,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_bce": 0.5259893499314785,
+            "validation_bce": 0.5893016457557678
+          },
+          {
+            "epoch": 2.0,
+            "train_bce": 0.5216790735721588,
+            "validation_bce": 0.6036821007728577
+          }
+        ],
+        "quantum_gradient_seen": false
+      },
+      "training_seconds": 0.02399030000000124
+    },
+    {
+      "best_epoch": 2,
+      "filter": "savgol",
+      "filter_config": {
+        "polyorder": 2,
+        "window_length": 15
+      },
+      "model": "LSTM baseline",
+      "target": "continuous_close",
+      "test": {
+        "mae": 88.39563083648682,
+        "r2": -1277.2565310292773,
+        "rmse": 88.42669821499642
+      },
+      "test_predictions": [
+        186.23501586914062,
+        186.21937561035156,
+        186.1937255859375,
+        186.1356201171875,
+        185.99269104003906,
+        185.99407958984375,
+        185.93817138671875,
+        185.901611328125,
+        185.89703369140625,
+        185.73428344726562,
+        185.65264892578125,
+        185.75320434570312,
+        185.8289337158203,
+        185.90187072753906,
+        186.02552795410156,
+        186.118408203125
+      ],
+      "training": {
+        "best_epoch": 2,
+        "best_validation_loss": 0.36385905742645264,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_mse": 0.30642479099333286,
+            "validation_mse": 1.0196518898010254
+          },
+          {
+            "epoch": 2.0,
+            "train_mse": 0.08050456875935197,
+            "validation_mse": 0.36385905742645264
+          }
+        ],
+        "quantum_gradient_seen": false
+      },
+      "training_seconds": 0.021382899999998983
+    },
+    {
+      "best_epoch": 1,
+      "filter": "savgol",
+      "filter_config": {
+        "polyorder": 2,
+        "window_length": 15
+      },
+      "model": "HybridQNN1",
+      "target": "binary_direction",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "f1_up": 0.0,
+        "precision_up": 0.0,
+        "predicted_up_rate": 0.0,
+        "recall_up": 0.0,
+        "roc_auc": 0.390625
+      },
+      "test_probabilities": [
+        0.39410483837127686,
+        0.3933841288089752,
+        0.3927627503871918,
+        0.392201691865921,
+        0.3918256461620331,
+        0.39163848757743835,
+        0.3915788233280182,
+        0.3912426829338074,
+        0.3909388482570648,
+        0.39063578844070435,
+        0.3905724883079529,
+        0.39063191413879395,
+        0.39052385091781616,
+        0.39051613211631775,
+        0.39068299531936646,
+        0.39080706238746643
+      ],
+      "training": {
+        "stage_1": {
+          "best_epoch": 2,
+          "best_validation_loss": 0.6494945287704468,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_bce": 0.530053723603487,
+              "validation_bce": 0.6584482192993164
+            },
+            {
+              "epoch": 2.0,
+              "train_bce": 0.5243176892399788,
+              "validation_bce": 0.6494945287704468
+            }
+          ],
+          "quantum_gradient_seen": false
+        },
+        "stage_2": {
+          "best_epoch": 1,
+          "best_validation_loss": 0.5093222856521606,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_bce": 0.5575024858117104,
+              "validation_bce": 0.5093222856521606
+            },
+            {
+              "epoch": 2.0,
+              "train_bce": 0.5364726185798645,
+              "validation_bce": 0.5409537553787231
+            }
+          ],
+          "quantum_gradient_seen": true
+        }
+      },
+      "training_seconds": 1.3208608000000002
+    },
+    {
+      "best_epoch": 2,
+      "filter": "savgol",
+      "filter_config": {
+        "polyorder": 2,
+        "window_length": 15
+      },
+      "model": "HybridQNN1",
+      "target": "continuous_close",
+      "test": {
+        "mae": 134.83697509765625,
+        "r2": -2971.9870079657676,
+        "rmse": 134.856195867063
+      },
+      "test_predictions": [
+        140.16355895996094,
+        139.95509338378906,
+        139.8053741455078,
+        139.6973419189453,
+        139.61126708984375,
+        139.55758666992188,
+        139.55062866210938,
+        139.45782470703125,
+        139.38714599609375,
+        139.30311584472656,
+        139.32440185546875,
+        139.3327178955078,
+        139.28689575195312,
+        139.30661010742188,
+        139.3448486328125,
+        139.37628173828125
+      ],
+      "training": {
+        "stage_1": {
+          "best_epoch": 2,
+          "best_validation_loss": 0.0412854366004467,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_mse": 0.09932901570573449,
+              "validation_mse": 0.2812154293060303
+            },
+            {
+              "epoch": 2.0,
+              "train_mse": 0.0043946812802460045,
+              "validation_mse": 0.0412854366004467
+            }
+          ],
+          "quantum_gradient_seen": false
+        },
+        "stage_2": {
+          "best_epoch": 2,
+          "best_validation_loss": 1.5425184965133667,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_mse": 1.4912242889404297,
+              "validation_mse": 2.283862352371216
+            },
+            {
+              "epoch": 2.0,
+              "train_mse": 0.8293519243597984,
+              "validation_mse": 1.5425184965133667
+            }
+          ],
+          "quantum_gradient_seen": true
+        }
+      },
+      "training_seconds": 1.2904169999999997
+    },
+    {
+      "best_epoch": 2,
+      "filter": "savgol",
+      "filter_config": {
+        "polyorder": 2,
+        "window_length": 15
+      },
+      "model": "HybridQNN2",
+      "target": "binary_direction",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        "f1_up": 0.6666666666666666,
+        "precision_up": 0.5,
+        "predicted_up_rate": 1.0,
+        "recall_up": 1.0,
+        "roc_auc": 0.296875
+      },
+      "test_probabilities": [
+        0.5674116015434265,
+        0.5673601627349854,
+        0.5673127174377441,
+        0.5672800540924072,
+        0.5672469735145569,
+        0.567243218421936,
+        0.5672200322151184,
+        0.5672078132629395,
+        0.5671777725219727,
+        0.5671571493148804,
+        0.5671606063842773,
+        0.5671578049659729,
+        0.5671555995941162,
+        0.56715989112854,
+        0.5671714544296265,
+        0.5671870708465576
+      ],
+      "training": {
+        "best_epoch": 2,
+        "best_validation_loss": 0.6746851205825806,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_bce": 0.5289070457220078,
+            "validation_bce": 0.6796380877494812
+          },
+          {
+            "epoch": 2.0,
+            "train_bce": 0.5206514894962311,
+            "validation_bce": 0.6746851205825806
+          }
+        ],
+        "quantum_gradient_seen": true
+      },
+      "training_seconds": 1.6283218000000002
+    },
+    {
+      "best_epoch": 2,
+      "filter": "savgol",
+      "filter_config": {
+        "polyorder": 2,
+        "window_length": 15
+      },
+      "model": "HybridQNN2",
+      "target": "continuous_close",
+      "test": {
+        "mae": 109.34447956085205,
+        "r2": -1954.5782407235924,
+        "rmse": 109.37347157399373
+      },
+      "test_predictions": [
+        164.89234924316406,
+        164.92320251464844,
+        164.95420837402344,
+        164.98110961914062,
+        165.006103515625,
+        165.01097106933594,
+        165.021484375,
+        165.03160095214844,
+        165.0481719970703,
+        165.07949829101562,
+        165.0785369873047,
+        165.0625,
+        165.07138061523438,
+        165.07083129882812,
+        165.0576934814453,
+        165.0509796142578
+      ],
+      "training": {
+        "best_epoch": 2,
+        "best_validation_loss": 0.6431794166564941,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_mse": 0.14763732068240643,
+            "validation_mse": 0.9175141453742981
+          },
+          {
+            "epoch": 2.0,
+            "train_mse": 0.03688474072259851,
+            "validation_mse": 0.6431794166564941
+          }
+        ],
+        "quantum_gradient_seen": true
+      },
+      "training_seconds": 1.4548938999999983
+    },
+    {
+      "best_epoch": 1,
+      "filter": "rolling",
+      "filter_config": {
+        "window_days": 10
+      },
+      "model": "LSTM baseline",
+      "target": "binary_direction",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "f1_up": 0.0,
+        "precision_up": 0.0,
+        "predicted_up_rate": 0.0,
+        "recall_up": 0.0,
+        "roc_auc": 0.515625
+      },
+      "test_probabilities": [
+        0.46332046389579773,
+        0.462900310754776,
+        0.46250322461128235,
+        0.4622116982936859,
+        0.46209609508514404,
+        0.46217483282089233,
+        0.4625726044178009,
+        0.46333345770835876,
+        0.4644838571548462,
+        0.46592196822166443,
+        0.46752074360847473,
+        0.4691891372203827,
+        0.47082626819610596,
+        0.47239527106285095,
+        0.47384944558143616,
+        0.47517165541648865
+      ],
+      "training": {
+        "best_epoch": 1,
+        "best_validation_loss": 0.580345094203949,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_bce": 0.5262419283390045,
+            "validation_bce": 0.580345094203949
+          },
+          {
+            "epoch": 2.0,
+            "train_bce": 0.5193083696067333,
+            "validation_bce": 0.610049307346344
+          }
+        ],
+        "quantum_gradient_seen": false
+      },
+      "training_seconds": 0.024425700000001882
+    },
+    {
+      "best_epoch": 2,
+      "filter": "rolling",
+      "filter_config": {
+        "window_days": 10
+      },
+      "model": "LSTM baseline",
+      "target": "continuous_close",
+      "test": {
+        "mae": 74.85094833374023,
+        "r2": -915.9197657334698,
+        "rmse": 74.89279974901491
+      },
+      "test_predictions": [
+        199.67694091796875,
+        199.496826171875,
+        199.4348907470703,
+        199.4231414794922,
+        199.38494873046875,
+        199.38751220703125,
+        199.393798828125,
+        199.47967529296875,
+        199.51055908203125,
+        199.55287170410156,
+        199.5660858154297,
+        199.56890869140625,
+        199.59552001953125,
+        199.58053588867188,
+        199.59228515625,
+        199.59262084960938
+      ],
+      "training": {
+        "best_epoch": 2,
+        "best_validation_loss": 0.15849940478801727,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_mse": 0.6901874244213104,
+            "validation_mse": 1.8043855428695679
+          },
+          {
+            "epoch": 2.0,
+            "train_mse": 0.17625823058187962,
+            "validation_mse": 0.15849940478801727
+          }
+        ],
+        "quantum_gradient_seen": false
+      },
+      "training_seconds": 0.024086900000000355
+    },
+    {
+      "best_epoch": 2,
+      "filter": "rolling",
+      "filter_config": {
+        "window_days": 10
+      },
+      "model": "HybridQNN1",
+      "target": "binary_direction",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "f1_up": 0.0,
+        "precision_up": 0.0,
+        "predicted_up_rate": 0.0,
+        "recall_up": 0.0,
+        "roc_auc": 0.53125
+      },
+      "test_probabilities": [
+        0.48601120710372925,
+        0.4859989285469055,
+        0.4859932065010071,
+        0.4859902560710907,
+        0.48598992824554443,
+        0.4859924018383026,
+        0.4860037863254547,
+        0.4860234260559082,
+        0.48604848980903625,
+        0.4860743582248688,
+        0.4860982894897461,
+        0.48612353205680847,
+        0.4861484467983246,
+        0.4861728250980377,
+        0.4861968457698822,
+        0.48622024059295654
+      ],
+      "training": {
+        "stage_1": {
+          "best_epoch": 1,
+          "best_validation_loss": 0.5696173310279846,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_bce": 0.5296614170074463,
+              "validation_bce": 0.5696173310279846
+            },
+            {
+              "epoch": 2.0,
+              "train_bce": 0.523337297141552,
+              "validation_bce": 0.5838481783866882
+            }
+          ],
+          "quantum_gradient_seen": false
+        },
+        "stage_2": {
+          "best_epoch": 2,
+          "best_validation_loss": 0.5935377478599548,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_bce": 0.5244589149951935,
+              "validation_bce": 0.5958444476127625
+            },
+            {
+              "epoch": 2.0,
+              "train_bce": 0.5214794799685478,
+              "validation_bce": 0.5935377478599548
+            }
+          ],
+          "quantum_gradient_seen": true
+        }
+      },
+      "training_seconds": 1.3914482999999969
+    },
+    {
+      "best_epoch": 2,
+      "filter": "rolling",
+      "filter_config": {
+        "window_days": 10
+      },
+      "model": "HybridQNN1",
+      "target": "continuous_close",
+      "test": {
+        "mae": 106.51417827606201,
+        "r2": -1854.669787348255,
+        "rmse": 106.54295732755955
+      },
+      "test_predictions": [
+        167.85433959960938,
+        167.84922790527344,
+        167.84532165527344,
+        167.8437042236328,
+        167.8443145751953,
+        167.84463500976562,
+        167.8440704345703,
+        167.84561157226562,
+        167.8484649658203,
+        167.85208129882812,
+        167.8555450439453,
+        167.85728454589844,
+        167.859130859375,
+        167.86056518554688,
+        167.8604736328125,
+        167.8606719970703
+      ],
+      "training": {
+        "stage_1": {
+          "best_epoch": 2,
+          "best_validation_loss": 0.9982435703277588,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_mse": 0.5304039530456066,
+              "validation_mse": 1.7655041217803955
+            },
+            {
+              "epoch": 2.0,
+              "train_mse": 0.26482236199080944,
+              "validation_mse": 0.9982435703277588
+            }
+          ],
+          "quantum_gradient_seen": false
+        },
+        "stage_2": {
+          "best_epoch": 2,
+          "best_validation_loss": 0.6254834532737732,
+          "epochs_ran": 2,
+          "history": [
+            {
+              "epoch": 1.0,
+              "train_mse": 0.3245236650109291,
+              "validation_mse": 1.110273003578186
+            },
+            {
+              "epoch": 2.0,
+              "train_mse": 0.08072139183059335,
+              "validation_mse": 0.6254834532737732
+            }
+          ],
+          "quantum_gradient_seen": true
+        }
+      },
+      "training_seconds": 1.2562937000000005
+    },
+    {
+      "best_epoch": 1,
+      "filter": "rolling",
+      "filter_config": {
+        "window_days": 10
+      },
+      "model": "HybridQNN2",
+      "target": "binary_direction",
+      "test": {
+        "accuracy": 0.5,
+        "actual_up_rate": 0.5,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "f1_up": 0.0,
+        "precision_up": 0.0,
+        "predicted_up_rate": 0.0,
+        "recall_up": 0.0,
+        "roc_auc": 0.53125
+      },
+      "test_probabilities": [
+        0.4161781370639801,
+        0.41599205136299133,
+        0.41584378480911255,
+        0.41570448875427246,
+        0.41561588644981384,
+        0.41560056805610657,
+        0.41578125953674316,
+        0.41614237427711487,
+        0.4166788160800934,
+        0.41733619570732117,
+        0.41808903217315674,
+        0.41897860169410706,
+        0.41994231939315796,
+        0.42097339034080505,
+        0.4220471680164337,
+        0.4231443405151367
+      ],
+      "training": {
+        "best_epoch": 1,
+        "best_validation_loss": 0.5464797019958496,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_bce": 0.5373402759432793,
+            "validation_bce": 0.5464797019958496
+          },
+          {
+            "epoch": 2.0,
+            "train_bce": 0.5185989625751972,
+            "validation_bce": 0.616280734539032
+          }
+        ],
+        "quantum_gradient_seen": true
+      },
+      "training_seconds": 1.5354512000000007
+    },
+    {
+      "best_epoch": 2,
+      "filter": "rolling",
+      "filter_config": {
+        "window_days": 10
+      },
+      "model": "HybridQNN2",
+      "target": "continuous_close",
+      "test": {
+        "mae": 96.75154304504395,
+        "r2": -1530.6180287046486,
+        "rmse": 96.79426665412643
+      },
+      "test_predictions": [
+        177.24636840820312,
+        177.0428466796875,
+        176.98699951171875,
+        177.01991271972656,
+        177.02432250976562,
+        176.97938537597656,
+        177.06504821777344,
+        177.35218811035156,
+        177.6160430908203,
+        177.8682403564453,
+        177.9971160888672,
+        178.08750915527344,
+        178.25482177734375,
+        178.3265380859375,
+        178.4065399169922,
+        178.55372619628906
+      ],
+      "training": {
+        "best_epoch": 2,
+        "best_validation_loss": 0.295931339263916,
+        "epochs_ran": 2,
+        "history": [
+          {
+            "epoch": 1.0,
+            "train_mse": 0.9268685057759285,
+            "validation_mse": 1.910393238067627
+          },
+          {
+            "epoch": 2.0,
+            "train_mse": 0.0532832108438015,
+            "validation_mse": 0.295931339263916
+          }
+        ],
+        "quantum_gradient_seen": true
+      },
+      "training_seconds": 1.7071214999999995
+    }
+  ]
+}

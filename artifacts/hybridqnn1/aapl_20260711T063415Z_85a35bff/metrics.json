@@ -1,0 +1,154 @@
+{
+  "refit_training": {
+    "quantum_gradient_seen": true,
+    "stage_1_epochs": 5,
+    "stage_1_final_train_rmse": 0.04870133101720494,
+    "stage_2_epochs": 5,
+    "stage_2_final_train_rmse": 0.28056997227583763,
+    "used": true
+  },
+  "release_gate": {
+    "reasons": [
+      "Model price RMSE did not beat the last-close naive baseline."
+    ],
+    "status": "rejected"
+  },
+  "selection_training": {
+    "elapsed_seconds_before_packaging": 81.8798347,
+    "stage_1": {
+      "best_epoch": 5,
+      "best_validation_rmse": 0.04626522585749626,
+      "epochs_ran": 10,
+      "history": [
+        {
+          "epoch": 1.0,
+          "train_rmse": 0.24834432657980002,
+          "validation_rmse": 0.15165871381759644
+        },
+        {
+          "epoch": 2.0,
+          "train_rmse": 0.07847997784565126,
+          "validation_rmse": 0.05005624145269394
+        },
+        {
+          "epoch": 3.0,
+          "train_rmse": 0.039111092562205574,
+          "validation_rmse": 0.04828892648220062
+        },
+        {
+          "epoch": 4.0,
+          "train_rmse": 0.03816715433442273,
+          "validation_rmse": 0.046787213534116745
+        },
+        {
+          "epoch": 5.0,
+          "train_rmse": 0.03840917161236831,
+          "validation_rmse": 0.04626522585749626
+        },
+        {
+          "epoch": 6.0,
+          "train_rmse": 0.03930469904012798,
+          "validation_rmse": 0.046624187380075455
+        },
+        {
+          "epoch": 7.0,
+          "train_rmse": 0.04041661189829124,
+          "validation_rmse": 0.04756089672446251
+        },
+        {
+          "epoch": 8.0,
+          "train_rmse": 0.04152874453581196,
+          "validation_rmse": 0.04877021163702011
+        },
+        {
+          "epoch": 9.0,
+          "train_rmse": 0.042524344558300675,
+          "validation_rmse": 0.05003923550248146
+        },
+        {
+          "epoch": 10.0,
+          "train_rmse": 0.04334364644560885,
+          "validation_rmse": 0.051214057952165604
+        }
+      ],
+      "quantum_gradient_seen": false
+    },
+    "stage_2": {
+      "best_epoch": 5,
+      "best_validation_rmse": 0.3908453583717346,
+      "epochs_ran": 10,
+      "history": [
+        {
+          "epoch": 1.0,
+          "train_rmse": 0.44664269266484596,
+          "validation_rmse": 0.4147568941116333
+        },
+        {
+          "epoch": 2.0,
+          "train_rmse": 0.19751789471308984,
+          "validation_rmse": 0.3984147906303406
+        },
+        {
+          "epoch": 3.0,
+          "train_rmse": 0.1918789159191422,
+          "validation_rmse": 0.3938279151916504
+        },
+        {
+          "epoch": 4.0,
+          "train_rmse": 0.1887539366820081,
+          "validation_rmse": 0.391740083694458
+        },
+        {
+          "epoch": 5.0,
+          "train_rmse": 0.18704986412906885,
+          "validation_rmse": 0.3908453583717346
+        },
+        {
+          "epoch": 6.0,
+          "train_rmse": 0.18681048678046439,
+          "validation_rmse": 0.39234939217567444
+        },
+        {
+          "epoch": 7.0,
+          "train_rmse": 0.18768838355630807,
+          "validation_rmse": 0.3949574828147888
+        },
+        {
+          "epoch": 8.0,
+          "train_rmse": 0.18925536594639694,
+          "validation_rmse": 0.3973408043384552
+        },
+        {
+          "epoch": 9.0,
+          "train_rmse": 0.19146861590081665,
+          "validation_rmse": 0.39916884899139404
+        },
+        {
+          "epoch": 10.0,
+          "train_rmse": 0.19441864880887433,
+          "validation_rmse": 0.40035581588745117
+        }
+      ],
+      "quantum_gradient_seen": true
+    }
+  },
+  "test": {
+    "price_mae": 25.73095703125,
+    "price_r2": -0.04983353614807129,
+    "price_rmse": 30.100915675635495,
+    "scaled_mae": 0.23397940397262573,
+    "scaled_rmse": 0.27371672950693116
+  },
+  "test_last_close_baseline": {
+    "price_mae": 2.7577440690021127,
+    "price_r2": 0.978291480623051,
+    "price_rmse": 4.328471737949276
+  },
+  "validation": {
+    "price_mae": 41.61334228515625,
+    "price_r2": -15.225290298461914,
+    "price_rmse": 42.981668512576384,
+    "scaled_mae": 0.3784027099609375,
+    "scaled_rmse": 0.3908453510581341
+  }
+}

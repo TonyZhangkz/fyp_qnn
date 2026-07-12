@@ -1,0 +1,12 @@
+2026-07-11T17:25:14Z | INFO | Starting fixed smoke 3D benchmark.
+2026-07-11T17:25:14Z | INFO | Configuration: {"data_path": "E:\\fyp_qnn\\data\\yfinance\\AAPL.parquet", "output_dir": "E:\\fyp_qnn\\fyp_qnn\\artifacts\\_final_3d_verification", "fixed_filter_config_path": "E:\\fyp_qnn\\fyp_qnn\\config\\fixed_feature_filter_configs.json", "ticker": "AAPL", "profile": "smoke", "lookback": 2, "k_features": 3, "n_qubits": 3, "q_layers": 1, "lstm_hidden_size": 6, "lstm_layers": 1, "lstm_dropout": 0.0, "fusion_hidden_size": 6, "holdout_ratio": 0.2, "validation_ratio": 0.25, "batch_size": 8, "baseline_epochs": 2, "hqnn1_pretrain_epochs": 2, "hqnn1_quantum_epochs": 2, "hqnn2_joint_epochs": 2, "baseline_lr": 0.01, "hqnn1_lr": 0.01, "hqnn2_lr": 0.01, "patience": 1, "cpu_threads": 2, "seed": 42, "max_train_sequences": 64, "max_validation_sequences": 16, "max_test_sequences": 16}
+2026-07-11T17:25:14Z | INFO | Preparing vanilla filter datasets.
+2026-07-11T17:25:14Z | ERROR | Final 3D benchmark failed. Temporary directory retained: E:\fyp_qnn\fyp_qnn\artifacts\_final_3d_verification\.aapl_20260711T092514Z_3c87435c.tmp
+Traceback (most recent call last):
+  File "E:\fyp_qnn\fyp_qnn\scripts\run_final_3d_benchmark.py", line 961, in main
+    prepare_binary_data(data, config, filter_name, filter_config)
+  File "E:\fyp_qnn\fyp_qnn\scripts\run_final_3d_benchmark.py", line 268, in prepare_binary_data
+    filtered = apply_feature_filter(
+  File "E:\fyp_qnn\fyp_qnn\scripts\tune_feature_filters.py", line 231, in apply_feature_filter
+    raise ValueError(f"Unsupported filter: {filter_name}")
+ValueError: Unsupported filter: vanilla

@@ -1,0 +1,14 @@
+2026-07-11T17:01:20Z | INFO | Starting benchmark direction-classification benchmark.
+2026-07-11T17:01:20Z | INFO | Exact PennyLane default.qubit runs on CPU; CUDA is intentionally unused.
+2026-07-11T17:01:20Z | INFO | Configuration: {"data_path": "E:\\fyp_qnn\\data\\yfinance\\AAPL.parquet", "output_dir": "E:\\fyp_qnn\\fyp_qnn\\artifacts\\direction_classification", "ticker": "AAPL", "profile": "benchmark", "lookback": 5, "k_features": 3, "n_qubits": 3, "q_layers": 1, "lstm_hidden_size": 16, "lstm_layers": 1, "lstm_dropout": 0.0, "fusion_hidden_size": 16, "holdout_ratio": 0.2, "validation_ratio": 0.2, "batch_size": 4, "baseline_epochs": 20, "hqnn1_pretrain_epochs": 10, "hqnn1_quantum_epochs": 10, "hqnn2_joint_epochs": 20, "baseline_lr": 0.001, "hqnn1_lr": 0.005, "hqnn2_lr": 0.001, "patience": 5, "max_train_sequences": 0, "max_validation_sequences": 0, "max_test_sequences": 0, "cpu_threads": 4, "seed": 42, "allow_large_circuits": false}
+2026-07-11T17:01:20Z | INFO | Prepared 976 rows into 619/156/196 train/validation/test direction sequences.
+2026-07-11T17:01:20Z | INFO | Up rates (train/validation/test): 0.525 / 0.545 / 0.551
+2026-07-11T17:01:20Z | INFO | Selected features: ['volume', 'macd', 'adx_14']
+2026-07-11T17:01:24Z | INFO | LSTM baseline early stopped at epoch 8.
+2026-07-11T17:01:24Z | INFO | LSTM baseline selected epoch 3 with validation BCE 0.657818.
+2026-07-11T17:01:25Z | INFO | HybridQNN1 Stage 1 early stopped at epoch 6.
+2026-07-11T17:01:25Z | INFO | HybridQNN1 Stage 1 selected epoch 1 with validation BCE 0.657307.
+2026-07-11T17:02:03Z | INFO | HybridQNN1 Stage 2 early stopped at epoch 7.
+2026-07-11T17:02:03Z | INFO | HybridQNN1 Stage 2 selected epoch 2 with validation BCE 0.656629.
+2026-07-11T17:02:49Z | INFO | HybridQNN2 joint early stopped at epoch 7.
+2026-07-11T17:02:49Z | INFO | HybridQNN2 joint selected epoch 2 with validation BCE 0.657133.

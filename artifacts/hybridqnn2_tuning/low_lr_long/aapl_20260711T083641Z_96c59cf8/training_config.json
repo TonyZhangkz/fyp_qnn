@@ -1,0 +1,49 @@
+{
+  "artifact_format_version": 1,
+  "config": {
+    "allow_large_circuits": false,
+    "batch_size": 4,
+    "cpu_threads": 4,
+    "data_path": "E:\\fyp_qnn\\data\\yfinance\\AAPL.parquet",
+    "fusion_hidden_size": 8,
+    "holdout_ratio": 0.2,
+    "joint_epochs": 40,
+    "joint_lr": 0.001,
+    "k_features": 3,
+    "lookback": 2,
+    "lstm_dropout": 0.0,
+    "lstm_hidden_size": 8,
+    "lstm_layers": 1,
+    "max_test_rmse": null,
+    "max_test_sequences": 0,
+    "max_train_sequences": 0,
+    "max_validation_sequences": 0,
+    "n_qubits": 3,
+    "output_dir": "E:\\fyp_qnn\\fyp_qnn\\artifacts\\hybridqnn2_tuning\\low_lr_long",
+    "patience": 10,
+    "profile": "staging",
+    "q_layers": 1,
+    "refit_on_train_validation": false,
+    "require_beat_naive": false,
+    "seed": 42,
+    "ticker": "AAPL",
+    "validation_ratio": 0.2
+  },
+  "data": {
+    "date_end": "2025-12-30 00:00:00",
+    "date_start": "2022-02-09 00:00:00",
+    "raw_rows_after_indicators": 976,
+    "raw_test_rows": 196,
+    "raw_train_rows": 624,
+    "raw_validation_rows": 156,
+    "sha256": "529749485712c303ce76f2d93da6f8a1c02941ae346d2cef55e950e66d731b88"
+  },
+  "runtime": {
+    "created_at_utc": "2026-07-11T08:40:59.165231+00:00",
+    "pennylane": "0.38.0",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.9.24 (main, Oct 14 2025, 16:10:39) [MSC v.1929 64 bit (AMD64)]",
+    "scikit_learn": "1.6.1",
+    "torch": "2.8.0+cu126"
+  }
+}
